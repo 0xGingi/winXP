@@ -75,7 +75,7 @@ const Help = [
   },
   {
     type: 'item',
-    text: 'About Minesweeper',
+    text: 'About $GONESweeper',
   },
 ];
 export default { Game, Help };

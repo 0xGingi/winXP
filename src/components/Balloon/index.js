@@ -11,7 +11,7 @@ function Balloon({ startAfter = 3000, duration = 15000 }) {
     const fadeTimer = setTimeout(() => setShow(false), startAfter + duration);
     const closeTimer = setTimeout(
       () => setStart(false),
-      startAfter + duration + 1000,
+      startAfter + duration + 10000,
     );
     return () => {
       clearTimeout(openTimer);
@@ -27,7 +27,7 @@ function Balloon({ startAfter = 3000, duration = 15000 }) {
           <div className="balloon__header">
             <img className="balloon__header__img" src={risk} alt="risk" />
             <span className="balloon__header__text">
-              Your computer might be at risk
+              Your $GONE might be at risk
             </span>
           </div>
           <p className="balloon__text__first">

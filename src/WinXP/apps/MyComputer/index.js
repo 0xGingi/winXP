@@ -22,7 +22,7 @@ import disk from 'assets/windowsIcons/334(48x48).png';
 import cd from 'assets/windowsIcons/111(48x48).png';
 import dropdown from 'assets/windowsIcons/dropdown.png';
 import pullup from 'assets/windowsIcons/pullup.png';
-import logo from 'assets/github-logo.png';
+import logo from 'assets/img/gonelogo.png';
 import mine from 'assets/minesweeper/mine-icon.png';
 import windows from 'assets/windowsIcons/windows.png';
 
@@ -220,45 +220,10 @@ function MyComputer({ onClose }) {
               </div>
               <div className="com__content__left__card__content">
                 <div className="com__content__left__card__row">
-                  <iframe
-                    title="ghbtn"
-                    style={{ margin: '0 0 3px -1px', height: '30px' }}
-                    src="https://ghbtns.com/github-btn.html?user=ShizukuIchi&repo=winXP&type=star&count=true&size=large"
-                    frameBorder="0"
-                    scrolling="0"
-                    width="170px"
-                    height="20px"
-                  />
                 </div>
                 <div className="com__content__left__card__row">
-                  <img
-                    className="com__content__left__card__img"
-                    src="https://cdn.iconscout.com/icon/free/png-256/medium-1425876-1205067.png"
-                    alt="control"
-                  />
-                  <a
-                    href="https://medium.com/@ShizukuIchi"
-                    target="_blank"
-                    rel="noreferrer"
-                    className="com__content__left__card__text link"
-                  >
-                    Medium
-                  </a>
                 </div>
                 <div className="com__content__left__card__row">
-                  <img
-                    className="com__content__left__card__img"
-                    src={mine}
-                    alt="control"
-                  />
-                  <a
-                    href="https://github.com/ShizukuIchi/minesweeper"
-                    target="_blank"
-                    rel="noreferrer"
-                    className="com__content__left__card__text link"
-                  >
-                    Minesweeper
-                  </a>
                 </div>
               </div>
             </div>
@@ -277,7 +242,7 @@ function MyComputer({ onClose }) {
                   />
                   <div className="com__content__right__card__img-container">
                     <div className="com__content__right__card__text">
-                      Shared Documents
+                    <a href="https://polygonscan.com/token/0x162539172b53E9a93b7d98Fb6c41682De558a320">Contract</a>
                     </div>
                   </div>
                 </div>
@@ -289,7 +254,7 @@ function MyComputer({ onClose }) {
                   />
                   <div className="com__content__right__card__img-container">
                     <div className="com__content__right__card__text">
-                      User's Documents
+                    <a href="https://quickswap.exchange/#/swap?outputCurrency=0x162539172b53E9a93b7d98Fb6c41682De558a320&swapIndex=0">Trade</a>
                     </div>
                   </div>
                 </div>
@@ -308,7 +273,8 @@ function MyComputer({ onClose }) {
                   />
                   <div className="com__content__right__card__img-container">
                     <div className="com__content__right__card__text">
-                      Local Disk (C:)
+                    <a href="https://itsgone.xyz">$GONE (C:)</a>
+
                     </div>
                   </div>
                 </div>
@@ -328,14 +294,14 @@ function MyComputer({ onClose }) {
                     />
                   </div>
                   <div className="com__content__right__card__text">
-                    CD Drive (D:)
+                    $GONE Docs (D:)
                   </div>
                 </div>
               </div>
             </div>
             <div className="com__content__right__card com__content__right__card--me">
               <div className="com__content__right__card__header">
-                About Me :)
+                About $GONE
               </div>
               <div className="com__content__right__card__content">
                 <a
@@ -349,7 +315,7 @@ function MyComputer({ onClose }) {
                     src={logo}
                     alt="control"
                   />
-                  <div className="com__content__right__card__text">Github</div>
+                  <div className="com__content__right__card__text">About</div>
                 </a>
                 <a
                   href="https://sh1zuku.csie.io"
@@ -359,11 +325,11 @@ function MyComputer({ onClose }) {
                 >
                   <img
                     className="com__content__right__card__img"
-                    src="https://a.ppy.sh/2926513_1448497605.png"
+                    src={logo}
                     alt="control"
                   />
                   <div className="com__content__right__card__text">
-                    My Website
+                    Distribution
                   </div>
                 </a>
               </div>

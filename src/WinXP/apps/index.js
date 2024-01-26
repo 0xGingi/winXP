@@ -5,6 +5,10 @@ import MyComputer from './MyComputer';
 import Notepad from './Notepad';
 import Winamp from './Winamp';
 import Paint from './Paint';
+import About from './About';
+import Integrations from './Integrations';
+import Distribution from './Distribution';
+import PolygonAirdrop from './PolygonAirdrop';
 import iePaper from 'assets/windowsIcons/ie-paper.png';
 import ie from 'assets/windowsIcons/ie.png';
 import mine from 'assets/minesweeper/mine-icon.png';
@@ -28,13 +32,13 @@ const genId = gen();
 const genIndex = gen();
 export const defaultAppState = [
   {
-    component: InternetExplorer,
+    component: Distribution,
     header: {
-      title: 'Internet Explorer',
-      icon: iePaper,
+      title: '$GONE Distribution',
+      icon: computer,
     },
     defaultSize: {
-      width: 700,
+      width: 500,
       height: 500,
     },
     defaultOffset: {
@@ -47,6 +51,89 @@ export const defaultAppState = [
     id: genId(),
     zIndex: genIndex(),
   },
+
+  {
+    component: Integrations,
+    header: {
+      title: '$GONE Integrations',
+      icon: computer,
+    },
+    defaultSize: {
+      width: 500,
+      height: 500,
+    },
+    defaultOffset: {
+      x: 130,
+      y: 20,
+    },
+    resizable: true,
+    minimized: false,
+    maximized: window.innerWidth < 800,
+    id: genId(),
+    zIndex: genIndex(),
+  },
+  {
+    component: About,
+    header: {
+      title: 'About $GONE',
+      icon: computer,
+    },
+    defaultSize: {
+      width: 500,
+      height: 300,
+    },
+    defaultOffset: {
+      x: 130,
+      y: 20,
+    },
+    resizable: true,
+    minimized: false,
+    maximized: window.innerWidth < 800,
+    id: genId(),
+    zIndex: genIndex(),
+  },
+
+  {
+    component: InternetExplorer,
+    header: {
+      title: 'Internet Explorer',
+      icon: iePaper,
+    },
+    defaultSize: {
+      width: 700,
+      height: 800,
+    },
+    defaultOffset: {
+      x: 500,
+      y: 200,
+    },
+    resizable: true,
+    minimized: false,
+    maximized: window.innerWidth < 800,
+    id: genId(),
+    zIndex: genIndex(),
+  },
+  {
+    component: PolygonAirdrop,
+    header: {
+      title: 'Polygon Collections Airdrop',
+      icon: computer,
+    },
+    defaultSize: {
+      width: 500,
+      height: 750,
+    },
+    defaultOffset: {
+      x: 130,
+      y: 20,
+    },
+    resizable: true,
+    minimized: false,
+    maximized: window.innerWidth < 800,
+    id: genId(),
+    zIndex: genIndex(),
+  },
+
   {
     component: Minesweeper,
     header: {
